@@ -36,7 +36,7 @@ For a complete view of how to use R2R for web development, check out the [web de
 1. Clone the repository:
    ```bash
    git clone https://github.com/SciPhi-AI/r2r-webdev-template.git
-   cd r2r-webdev-template
+   cd r2r-webdev-template/r2r-webdev-template
    ```
 
 2. Install dependencies:
