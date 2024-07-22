@@ -53,15 +53,6 @@ For a complete view of how to use R2R for web development, check out the [web de
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
-# Project Structure
-
-- `pages/`: Next.js pages
-  - `api/`: API routes
-    - `r2r-query.ts`: Handles R2R queries
-  - `index.tsx`: Main page component
-- `styles/`: CSS modules
-- `public/`: Static assets
-
 # Customization
 
 - Update the R2R server URL in `pages/api/r2r-query.ts` if needed.
