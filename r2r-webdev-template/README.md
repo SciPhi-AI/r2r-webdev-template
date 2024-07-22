@@ -7,7 +7,7 @@
   <a href="https://www.npmjs.com/package/r2r-js"><img src="https://img.shields.io/npm/v/r2r-js.svg" alt="npm version"></a>
 </p>
 
-<img src="https://raw.githubusercontent.com/SciPhi-AI/R2R/main/assets/r2r.png" alt="R2R Web Dev Template">
+<img src="https://raw.githubusercontent.com/SciPhi-AI/R2R/main/assets/r2r.png" alt="R2R">
 <h3 align="center">
 R2R Web Dev Template: A Next.js Starter for Building RAG-powered Web Apps
 </h3>
@@ -17,6 +17,8 @@ R2R Web Dev Template: A Next.js Starter for Building RAG-powered Web Apps
 A simple web app template for starting applications with [R2R](https://github.com/SciPhi-AI/R2R). This template demonstrates how to integrate R2R's powerful RAG capabilities into a Next.js web interface, providing a foundation for more complex applications.
 
 For a complete view of how to use R2R for web development, check out the [web dev cookbook](https://r2r-docs.sciphi.ai/cookbooks/web-dev).
+
+<img src="./assets/r2r_webdev_template.png" alt="R2R Web Dev Template">
 
 ## Key Features
 
