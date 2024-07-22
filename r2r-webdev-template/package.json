@@ -1,0 +1,30 @@
+{
+  "name": "r2r-webdev-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "prettier": "^3.3.3",
+    "r2r-js": "^1.2.9",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}
