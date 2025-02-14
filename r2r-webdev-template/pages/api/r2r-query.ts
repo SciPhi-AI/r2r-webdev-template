@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { r2rClient } from "r2r-js";
 
-const client = new r2rClient("http://localhost:8000");
+const client = new r2rClient("http://localhost:7272");
 
 export default async function handler(
   req: NextApiRequest,
@@ -11,20 +11,14 @@ export default async function handler(
     const { query } = req.body;
 
     try {
-      // Login with each request. In a production app, you'd want to manage sessions.
-      await client.login("admin@example.com", "change_me_immediately");
 
-      const response = await client.rag({
+      const response = await client.retrieval.rag({
         query: query,
-        rag_generation_config: {
-          model: "gpt-4o",
-          temperature: 0.0,
-          stream: false,
-        },
       });
+      console.log(response)
 
       res.status(200).json({
-        result: response.results.completion.choices[0].message.content,
+        result: response.results.generatedAnswer
       });
     } catch (error) {
       res.status(500).json({

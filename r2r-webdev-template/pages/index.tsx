@@ -40,7 +40,7 @@ const R2RQueryApp: React.FC = () => {
       <p>
         {" "}
         A simple template for making RAG queries with R2R. Make sure that your
-        R2R server is up and running, and that you've ingested files!
+        R2R server is up and running, and that you&apos;ve ingested files!
       </p>
       <p>
         Check out the{" "}
