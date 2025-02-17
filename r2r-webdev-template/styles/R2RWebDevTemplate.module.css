@@ -4,21 +4,22 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: #f0f0f0;
+  background-color: black;
   min-height: 100vh;
-  color: #333;
+  color: white;
 }
 
 .title {
-  color: #333;
-  margin-top: 0;
+  color: white;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .queryInput {
   width: 100%;
   max-width: 500px;
   padding: 0.5rem;
-  margin: 0.5rem 0;
+  margin: 3rem 0 0.5rem 0;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
@@ -28,19 +29,19 @@
 
 .submitButton {
   width: 100%;
-  max-width: 500px;
+  max-width: 200px;
   padding: 0.5rem;
   margin: 0.5rem 0;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
+  background-color: #027948;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .submitButton:hover {
-  background-color: #0056b3;
+  background-color: rgb(127, 127, 127);
 }
 
 .submitButton:disabled {
@@ -51,15 +52,44 @@
 .resultDisplay {
   width: 100%;
   max-width: 500px;
-  min-height: 100px;
+  min-height: 200px;
   padding: 0.5rem;
-  margin: 0.5rem 0;
+  margin: 3rem 0 0 0;
   border: 1px solid #ddd;
   border-radius: 4px;
   background-color: #f8f9fa;
   white-space: pre-wrap;
   box-sizing: border-box;
-  color: #333;
+  color: #777;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  display: flex;
+}
+
+.resultPlaceholder {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: #777; /* Subtle gray color to indicate placeholder */
+}
+
+.appWrapper a {
+  color: #027948;
+  font-weight: bold;
+}
+
+.logoContainer {
+  display: flex;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 60px; /* Adjusted width to make the logos smaller */
+  height: auto; /* Maintain aspect ratio */
 }
 
 @keyframes spin {
@@ -79,4 +109,9 @@
   height: 40px;
   animation: spin 1s linear infinite;
   margin: 1rem 0;
+}
+
+.appWrapper p {
+  margin: 0.3rem 0; /* Reduce vertical space between paragraphs */
+  line-height: 1.2; /* Adjust line height for tighter spacing */
 }
