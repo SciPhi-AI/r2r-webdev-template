@@ -11,14 +11,13 @@ export default async function handler(
     const { query } = req.body;
 
     try {
-
       const response = await client.retrieval.rag({
         query: query,
       });
-      console.log(response)
+      console.log(response);
 
       res.status(200).json({
-        result: response.results.generatedAnswer
+        result: response.results.generatedAnswer,
       });
     } catch (error) {
       res.status(500).json({

@@ -36,22 +36,33 @@ const R2RQueryApp: React.FC = () => {
 
   return (
     <div className={styles.appWrapper}>
-      <h1 className={styles.title}>R2R Web Dev Template</h1>
+      <div className={styles.logoContainer}>
+        <img
+          src="/SciPhi-AI Logo.png"
+          alt="SciPhi-AI Logo"
+          className={styles.logo}
+        />
+        <img src="/R2RIcon.png" alt="R2R Icon" className={styles.logo} />
+      </div>
+
+      <h1 className={styles.title}>
+        Welcome to the R2R Web Development Template!
+      </h1>
+      <p> This is a simple template to make RAG queries with R2R.</p>
       <p>
         {" "}
-        A simple template for making RAG queries with R2R. Make sure that your
-        R2R server is up and running, and that you&apos;ve ingested files!
+        Make sure that your R2R server is up and running, and that you&apos;ve
+        uploaded files!
       </p>
       <p>
-        Check out the{" "}
+        For more information:{" "}
         <a
-          href="https://r2r-docs.sciphi.ai/"
+          href="https://r2r-docs.sciphi.ai/documentation/overview"
           target="_blank"
           rel="noopener noreferrer"
         >
           R2R Documentation
-        </a>{" "}
-        for more information.
+        </a>
       </p>
       <input
         type="text"
@@ -70,7 +81,15 @@ const R2RQueryApp: React.FC = () => {
       {isLoading ? (
         <div className={styles.spinner} />
       ) : (
-        <div className={styles.resultDisplay}>{result}</div>
+        <div className={styles.resultDisplay}>
+          {result ? (
+            result
+          ) : (
+            <span className={styles.placeholderText}>
+              Your generated answer will appear here
+            </span>
+          )}
+        </div>
       )}
     </div>
   );
