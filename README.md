@@ -18,7 +18,7 @@ A simple web app template for starting applications with [R2R](https://github.co
 
 For a complete view of how to use R2R for web development, check out the [web dev cookbook](https://r2r-docs.sciphi.ai/cookbooks/web-dev).
 
-<img src="./assets/r2r_webdev_template.png" alt="R2R Web Dev Template">
+<img src="./assets/R2R_Web_Dev_Template.png" alt="R2R Web Dev Template">
 
 ## Key Features
 
