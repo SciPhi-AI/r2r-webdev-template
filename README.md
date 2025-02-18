@@ -7,7 +7,6 @@
   <a href="https://www.npmjs.com/package/r2r-js"><img src="https://img.shields.io/npm/v/r2r-js.svg" alt="npm version"></a>
 </p>
 
-<img src="https://raw.githubusercontent.com/SciPhi-AI/R2R/main/assets/r2r.png" alt="R2R">
 <h3 align="center">
 R2R Web Dev Template: A Next.js Starter for Building RAG-powered Web Apps
 </h3>
